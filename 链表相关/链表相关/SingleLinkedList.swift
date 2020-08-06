@@ -13,6 +13,10 @@ class SingleLinkedList {
      private let head:HeroNode = HeroNode(0,"")
 
      
+    func getHead() -> HeroNode {
+        return head
+    }
+    
      //添加新的节点
      func add(heroNode:HeroNode) {
          
@@ -159,4 +163,106 @@ class SingleLinkedList {
          }
      }
     
+    
+    // MARK:  求单链表中有效节点的个数
+    // 获取到单链表的节点的个数（如果是带头节点的链表，需求不统计头节点）
+       static func getLength(head:HeroNode) -> Int {
+            if head.next == nil {
+                return 0
+            }else{
+                var length = 0
+                
+                var cur = head.next
+                
+                while cur != nil {
+                    length += 1
+                    cur = cur?.next
+                }
+                
+                return length
+                
+            }
+        }
+    
+    // MARK:  查找单链表中的倒数第k个节点  index 就是随机数K
+    static func findLastIndexNode(head:HeroNode,index:Int) -> (HeroNode)? {
+               if head.next == nil {
+                       return nil //没有找到
+               }else{
+                
+                var cur = head.next
+               
+                let size = SingleLinkedList.getLength(head: singleLinkedList.getHead())
+                
+                //做个校验
+                if index <= 0 || index > size{
+                    return nil
+                }
+                
+                for _ in 0..<size - index {
+                    cur = cur?.next
+                }
+                
+                return cur
+                   
+        }
+        
+    }
+    
+    
+    // MARK:  实现单链表的反转
+    // 思路:
+    //1. 先定义一个节点 reverseHead = new HeroNode();
+    //2. 从头到尾遍历原来的链表，每遍历一个节点，就将其取出，并放在新的链表reverseHead 的最前端.
+    //3. 原来的链表的head.next = reverseHead.next
+
+    static func reversetList(head:HeroNode) {
+        
+        //如果当前链表为空，或者只有一个节点，无需反正，直接返回
+        if head.next == nil || head.next?.next == nil {
+            return
+        }
+        
+        //定义一个辅助的变量，帮助我们遍历原来的链表
+        var cur  = head.next
+        let reversetHead = HeroNode(0, "")
+        //指向当前节点cur的下一个节点
+        var next:HeroNode?
+        //遍历原来的链表，每遍历一个节点，就将其取出，并放在新的链表reversetHead的最前端
+        while cur != nil {
+            next = cur!.next//先暂时保存当前节点的下一个节点，用来往后遍历
+            cur?.next = reversetHead.next //将cur 的下一个节点指向新的链表的最前端
+            reversetHead.next = cur //将cur 连接到新的链表上
+            cur = next //cur 往后移
+        }
+        //将head.next 指向 reversetHead.next 实现单链表的反转
+        head.next =  reversetHead.next
+        
+    }
+    
+    
+    // MARK:  单链表逆序打印
+    //可以利用栈这个数据结构，将各个节点压入到栈中，然后利用栈的先进后出的特点，就实现了逆序打印的效果
+    static func reversePrint(head:HeroNode) {
+        
+        if head.next == nil {
+            return
+        }
+        
+        //创建一个栈对象
+        var stack = Stack<HeroNode>()
+        
+        //定义一个辅助的变量，帮助我们遍历原来的链表
+        var cur  = head.next
+        //将链表所有节点压入栈
+        while cur != nil {
+            stack.push(cur!)
+            cur = cur?.next
+        }
+        
+        for _ in 0..<stack.length() {
+            print("单链表逆序打印---> \(String(describing: stack.pop()?.toString()))")
+        }
+        
+    }
 }
