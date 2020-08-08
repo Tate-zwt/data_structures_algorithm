@@ -8,19 +8,19 @@
 
 import Foundation
 // MARK:  测试单向链表
-    let hero1 = HeroNode(1, "孙悟空")
-    let hero2 = HeroNode(2, "吕布")
-    let hero3 = HeroNode(3, "李白")
-    let hero4 = HeroNode(4, "伽罗")
-    let hero5 = HeroNode(5, "李信")
-
-    var singleLinkedList = SingleLinkedList()
-
-    singleLinkedList.add(heroNode: hero1)
-    singleLinkedList.add(heroNode: hero2)
-    singleLinkedList.add(heroNode: hero3)
-    singleLinkedList.add(heroNode: hero4)
-    singleLinkedList.add(heroNode: hero5)
+//    let hero1 = HeroNode(1, "孙悟空")
+//    let hero2 = HeroNode(2, "吕布")
+//    let hero3 = HeroNode(3, "李白")
+//    let hero4 = HeroNode(4, "伽罗")
+//    let hero5 = HeroNode(5, "李信")
+//
+//    var singleLinkedList = SingleLinkedList()
+//
+//    singleLinkedList.add(heroNode: hero1)
+//    singleLinkedList.add(heroNode: hero2)
+//    singleLinkedList.add(heroNode: hero3)
+//    singleLinkedList.add(heroNode: hero4)
+//    singleLinkedList.add(heroNode: hero5)
 
 //
 //    var length =  SingleLinkedList.getLength(head: singleLinkedList.getHead())
@@ -28,9 +28,9 @@ import Foundation
 //     print("获取到单链表的节点的个数（如果是带头节点的链表，需求不统计头节点）-- \(length)")
     
 //
-   var k = SingleLinkedList.findLastIndexNode(head: singleLinkedList.getHead(), index: 5)
+//   var k = SingleLinkedList.findLastIndexNode(head: singleLinkedList.getHead(), index: 5)
 
-   print("查找单链表中的倒数第k个节点 -- \(String(describing: k?.name))")
+//   print("查找单链表中的倒数第k个节点 -- \(String(describing: k?.name))")
 
 
     
@@ -99,3 +99,17 @@ import Foundation
 //doubleLinkedList.delete(no:3)
 //print("删除后的链表情况~~")
 //doubleLinkedList.list()
+
+
+// MARK:  Josephu(约瑟夫、约瑟夫环)  问题
+/**
+ Josephu  问题为：设编号为1，2，… n的n个人围坐一圈，约定编号为k（1<=startNo<=n）的人从1开始报数，数到countNum 的那个人出列，它的下一位又从1开始报数，数到m的那个人又出列，依次类推，直到所有人出列为止，由此产生一个出队编号的序列。
+
+ 提示：用一个不带头结点的循环链表来处理Josephu 问题：先构成一个有n个结点的单循环链表，然后由k结点起从1开始计数，计到m时，对应结点从链表中删除，然后再从被删除结点的下一个结点又从1开始计数，直到最后一个结点从链表中删除算法结束。
+ */
+
+var circleSingleLinkedList =  CircleSingleLinkedList();
+circleSingleLinkedList.addBoy(nums: 5)
+//circleSingleLinkedList.showBoy()
+circleSingleLinkedList.countBoy(startNo: 1, countNum: 2, nums: 5)
+

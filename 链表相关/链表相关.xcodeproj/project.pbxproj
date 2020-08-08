@@ -12,6 +12,8 @@
 		5D012F8F24DA5D61001DCD12 /* SingleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D012F8E24DA5D61001DCD12 /* SingleLinkedList.swift */; };
 		5D0262F124DE94FF00D82C0D /* HeroNode2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0262F024DE94FF00D82C0D /* HeroNode2.swift */; };
 		5D0262F324DE952F00D82C0D /* DoubleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0262F224DE952F00D82C0D /* DoubleLinkedList.swift */; };
+		5D46517824DEF0F3003AE158 /* Boy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D46517724DEF0F3003AE158 /* Boy.swift */; };
+		5D46517C24DEF236003AE158 /* CircleSingleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D46517B24DEF236003AE158 /* CircleSingleLinkedList.swift */; };
 		5DF364D824DBDDC60032753B /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF364D724DBDDC60032753B /* Stack.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,8 @@
 		5D012F8E24DA5D61001DCD12 /* SingleLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleLinkedList.swift; sourceTree = "<group>"; };
 		5D0262F024DE94FF00D82C0D /* HeroNode2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroNode2.swift; sourceTree = "<group>"; };
 		5D0262F224DE952F00D82C0D /* DoubleLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleLinkedList.swift; sourceTree = "<group>"; };
+		5D46517724DEF0F3003AE158 /* Boy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boy.swift; sourceTree = "<group>"; };
+		5D46517B24DEF236003AE158 /* CircleSingleLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleSingleLinkedList.swift; sourceTree = "<group>"; };
 		5DF364D724DBDDC60032753B /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +77,8 @@
 				5DF364D724DBDDC60032753B /* Stack.swift */,
 				5D0262F024DE94FF00D82C0D /* HeroNode2.swift */,
 				5D0262F224DE952F00D82C0D /* DoubleLinkedList.swift */,
+				5D46517724DEF0F3003AE158 /* Boy.swift */,
+				5D46517B24DEF236003AE158 /* CircleSingleLinkedList.swift */,
 			);
 			path = "链表相关";
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 				5D012F8624DA5D3F001DCD12 /* main.swift in Sources */,
 				5D012F8F24DA5D61001DCD12 /* SingleLinkedList.swift in Sources */,
 				5D012F8D24DA5D4F001DCD12 /* HeroNode.swift in Sources */,
+				5D46517C24DEF236003AE158 /* CircleSingleLinkedList.swift in Sources */,
+				5D46517824DEF0F3003AE158 /* Boy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
