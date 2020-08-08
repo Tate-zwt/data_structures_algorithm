@@ -192,7 +192,7 @@ class SingleLinkedList {
                 
                 var cur = head.next
                
-                let size = SingleLinkedList.getLength(head: singleLinkedList.getHead())
+                let size = SingleLinkedList.getLength(head: head)
                 
                 //做个校验
                 if index <= 0 || index > size{
