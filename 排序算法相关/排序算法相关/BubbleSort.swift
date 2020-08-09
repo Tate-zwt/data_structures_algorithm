@@ -1,5 +1,12 @@
-import UIKit
+//
+//  BubbleSort.swift
+//  排序算法相关
+//
+//  Created by Tate on 2020/8/9.
+//  Copyright © 2020 Tate. All rights reserved.
+//
 
+import Foundation
 //常规冒泡排序
 func bubbleSort(_ numbers:[Int]) -> [Int]{
     //改成可变数组
@@ -24,7 +31,6 @@ func bubbleSort(_ numbers:[Int]) -> [Int]{
     return nums
 
 }
-print("常规冒泡排序是 --- \(bubbleSort([3,9,-1,10,20]))")
 
 
 
@@ -63,6 +69,5 @@ func bubbleSortOptimize(_ numbers:[Int]) -> [Int]{
 
 }
 
-print("优化后的冒泡排序是 --- \(bubbleSortOptimize([3,9,-1,10,20]))")
 
 

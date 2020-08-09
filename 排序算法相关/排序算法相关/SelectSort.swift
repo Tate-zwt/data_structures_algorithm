@@ -1,5 +1,12 @@
-import UIKit
+//
+//  SelectSort.swift
+//  排序算法相关
+//
+//  Created by Tate on 2020/8/9.
+//  Copyright © 2020 Tate. All rights reserved.
+//
 
+import Foundation
 //选择排序
 func selectSort(_ numbers:[Int]) -> [Int]{
     //改成可变数组
@@ -24,11 +31,10 @@ func selectSort(_ numbers:[Int]) -> [Int]{
         }
         
         
-        print("第\(i + 1)趟排序后的数组")
-        print(nums)
+//        print("第\(i + 1)趟排序后的数组")
+//        print(nums)
         
     }
     return nums
 
 }
-print("选择排序是 --- \(selectSort([3,9,-1,10,8]))")
