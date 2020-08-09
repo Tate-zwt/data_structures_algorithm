@@ -11,6 +11,7 @@ import Foundation
 func insertionSort(_ numbers:[Int]) -> [Int]{
     //改成可变数组
     var nums = numbers
+    //    时间复杂度 O(n^2)
     let n = nums.count
     for i in 1..<n {
         //先保存起需要插入的值

@@ -11,6 +11,8 @@
 		5DDA65D724DFEE4E0036864B /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDA65D624DFEE4E0036864B /* BubbleSort.swift */; };
 		5DDA65D924DFEE790036864B /* SelectSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDA65D824DFEE790036864B /* SelectSort.swift */; };
 		5DDA65DB24DFEE990036864B /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDA65DA24DFEE990036864B /* InsertionSort.swift */; };
+		5DDA65DD24E029890036864B /* ShellSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDA65DC24E029890036864B /* ShellSort.swift */; };
+		5DDA65DF24E03E810036864B /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDA65DE24E03E810036864B /* QuickSort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,8 @@
 		5DDA65D624DFEE4E0036864B /* BubbleSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSort.swift; sourceTree = "<group>"; };
 		5DDA65D824DFEE790036864B /* SelectSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSort.swift; sourceTree = "<group>"; };
 		5DDA65DA24DFEE990036864B /* InsertionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
+		5DDA65DC24E029890036864B /* ShellSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellSort.swift; sourceTree = "<group>"; };
+		5DDA65DE24E03E810036864B /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				5DDA65D624DFEE4E0036864B /* BubbleSort.swift */,
 				5DDA65D824DFEE790036864B /* SelectSort.swift */,
 				5DDA65DA24DFEE990036864B /* InsertionSort.swift */,
+				5DDA65DC24E029890036864B /* ShellSort.swift */,
+				5DDA65DE24E03E810036864B /* QuickSort.swift */,
 			);
 			path = "排序算法相关";
 			sourceTree = "<group>";
@@ -129,6 +135,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DDA65DD24E029890036864B /* ShellSort.swift in Sources */,
+				5DDA65DF24E03E810036864B /* QuickSort.swift in Sources */,
 				5DDA65D024DFEE340036864B /* main.swift in Sources */,
 				5DDA65DB24DFEE990036864B /* InsertionSort.swift in Sources */,
 				5DDA65D924DFEE790036864B /* SelectSort.swift in Sources */,
