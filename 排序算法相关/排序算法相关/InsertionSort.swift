@@ -15,7 +15,7 @@ func insertionSort(_ numbers:[Int]) -> [Int]{
     for i in 1..<n {
         //先保存起需要插入的值
         let insertVal = nums[i]
-        var insertIndex = i - 1 // 插入的前一个索引，第一个来比较的值
+        var insertIndex = i - 1 // 插入的前一个索引，用来比较的值
         
         // 给 insertVal 找到插入的位置
         // 说明
@@ -27,7 +27,7 @@ func insertionSort(_ numbers:[Int]) -> [Int]{
             insertIndex -= 1 //注意这里每次都-1 所以后面需要加1
         }
         //当退出 while 循环时，说明插入的位置找到, insertIndex + 1
-        if insertIndex != i {
+        if insertIndex + 1 != i { //如果位置相同的话，就没必要插入了
             //位置找到，插入最小值
             nums[insertIndex + 1] = insertVal
         }
