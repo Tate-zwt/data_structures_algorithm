@@ -241,6 +241,60 @@ class SingleLinkedList {
     }
     
     
+    
+        
+    // MARK:  实现单链表的反转
+    class ListNode {
+        var no:Int = 0
+        var name:String = ""
+        var next:ListNode?
+        init(_ no:Int,_ name:String) {
+            self.no = no;
+            self.name = name
+        }
+        func toString() -> String {
+            return "ListNode [no=\(no), name=\(name)]"
+        }
+    }
+    //    解题思路
+    //
+    //    特殊处理
+    //    当头节点 == nil，或只有1个节点时，直接返回
+    //    正常流程
+    //    当前节点p，记录当前遍历节点
+    //    新的头节点newHead，记录拆链后新链表的头节点
+    //    while循环步骤：
+    //    1、临时变量tmp = p.next记录拆链前的下一个节点；
+    //    2、拆链，将当前p节点的next指向新的头节点（初始为nil）p.next = newHead；
+    //    3、更新新的头节点newHead为当前节点p，newHead = p；
+    //    4、更新当前遍历节点p为下一个将要遍历的节点，p = tmp；
+    //    最后返回新链表头节点 return newHead
+    func reverseList(_ head: ListNode?) -> ListNode? {
+        
+          //如果当前链表为空，或者只有一个节点，无需反正，直接返回
+            if head == nil || head?.next == nil {
+                return head
+            }
+           //定义一个辅助的变量，帮助我们遍历原来的链表
+            var p = head
+            var newHead: ListNode? = nil
+            while p != nil {
+                let tmp = p?.next
+                p?.next = newHead
+                newHead = p
+                p = tmp
+            }
+            return newHead
+        }
+
+   
+        
+
+
+
+  
+
+    
     // MARK:  单链表逆序打印
     //可以利用栈这个数据结构，将各个节点压入到栈中，然后利用栈的先进后出的特点，就实现了逆序打印的效果
     static func reversePrint(head:HeroNode) {

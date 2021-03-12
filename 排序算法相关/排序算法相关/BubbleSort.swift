@@ -32,8 +32,6 @@ func bubbleSort(_ numbers:[Int]) -> [Int]{
 
 }
 
-
-
 //优化后的冒泡排序
 func bubbleSortOptimize(_ numbers:[Int]) -> [Int]{
     //改成可变数组
@@ -68,6 +66,55 @@ func bubbleSortOptimize(_ numbers:[Int]) -> [Int]{
     return nums
 
 }
+
+
+
+
+
+
+func bubbleSortTest(_ nub:[Int]) -> [Int]{
+    
+    var arr = nub
+    let c = arr.count
+    for i in 0..<c - 1 {
+        for j in 0..<c - i - 1 {
+            if arr[j] > arr[j+1] {
+                let temp = arr[j]
+                arr[j] = arr[j+1]
+                arr[j+1] = temp
+            }
+        }
+    }
+    
+    
+    return arr
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
