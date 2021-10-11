@@ -112,7 +112,7 @@ func binarySearch3(_ numbers:[Int] ,_ findValue:Int) -> Int  {
     var left = 0
     var right = numbers.count - 1
     
-    while left < right {
+    while left <= right { //说明继续查找
         let mid = (left + right) / 2
         if numbers[mid] == findValue {
             return mid
