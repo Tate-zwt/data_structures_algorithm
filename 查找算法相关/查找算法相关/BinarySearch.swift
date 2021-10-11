@@ -100,3 +100,28 @@ func binarySearch2(_ numbers:[Int] ,_ findValue:Int,leftIndex:Int,rightIndex:Int
         return list
     }
 }
+
+
+//二分查找的非递归实现
+/****
+ @param arr 待查找的数组, arr 是升序排序
+ * @param target 需要查找的数
+ * @return 返回对应下标，-1 表示没有找到
+ */
+func binarySearch3(_ numbers:[Int] ,_ findValue:Int) -> Int  {
+    var left = 0
+    var right = numbers.count - 1
+    
+    while left < right {
+        let mid = (left + right) / 2
+        if numbers[mid] == findValue {
+            return mid
+        }else if findValue > numbers[mid] {
+            left = mid + 1 //需要向右边查找
+        }else if findValue < numbers[mid] {
+            right = mid - 1 //需要向左边查找
+        }
+    }
+    
+    return -1
+}
