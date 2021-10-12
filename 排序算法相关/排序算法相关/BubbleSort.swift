@@ -14,6 +14,7 @@ func bubbleSort(_ numbers:[Int]) -> [Int]{
 //    时间复杂度 O(n^2)
     let n = nums.count
     for i in 0..<(n - 1)  {
+        //这里 -i 是因为你交换过的数就没必要再次交换了 -1 是没必要跟自己冒泡
         for j in 0..<(n - 1 - i) {
             //如果前面的数比后面的数大就交换
             if nums[j] > nums[j + 1] {
@@ -42,8 +43,8 @@ func bubbleSortOptimize(_ numbers:[Int]) -> [Int]{
     var flag = false //标识变量，标识是否进行交换过，优化算法
     
     for i in 0..<(n - 1)  {
+        //这里 -i 是因为你交换过的数就没必要再次交换了 -1 是没必要跟自己冒泡
         for j in 0..<(n - 1 - i) {
-            
             //如果前面的数比后面的数大就交换
             if nums[j] > nums[j + 1] {
                 flag = true
