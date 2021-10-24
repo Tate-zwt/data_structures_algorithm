@@ -18,4 +18,9 @@ import Foundation
 
 
 //分治算法
-hanoiTower(num: 10, a:"A" , b: "B", c:"C" )
+//hanoiTower(num: 10, a:"A" , b: "B", c:"C" )
+
+//贪心算法
+
+
+print("贪心算法最优广播台 ---- \(testGreedyAlgorithm())")

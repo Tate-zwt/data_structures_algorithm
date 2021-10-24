@@ -10,6 +10,7 @@
 		5D2DA71227147AEB0090FA27 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2DA71127147AEB0090FA27 /* main.swift */; };
 		5D2DA71927147B080090FA27 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2DA71827147B080090FA27 /* BinarySearch.swift */; };
 		5D2DA71B271487230090FA27 /* Hanoitower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2DA71A271487230090FA27 /* Hanoitower.swift */; };
+		5D7E05EF27259B6C00673C38 /* GreedyAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7E05EE27259B6C00673C38 /* GreedyAlgorithm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		5D2DA71127147AEB0090FA27 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		5D2DA71827147B080090FA27 /* BinarySearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BinarySearch.swift; path = "../../../查找算法相关/查找算法相关/BinarySearch.swift"; sourceTree = "<group>"; };
 		5D2DA71A271487230090FA27 /* Hanoitower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hanoitower.swift; sourceTree = "<group>"; };
+		5D7E05EE27259B6C00673C38 /* GreedyAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreedyAlgorithm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				5D2DA71827147B080090FA27 /* BinarySearch.swift */,
 				5D2DA71127147AEB0090FA27 /* main.swift */,
 				5D2DA71A271487230090FA27 /* Hanoitower.swift */,
+				5D7E05EE27259B6C00673C38 /* GreedyAlgorithm.swift */,
 			);
 			path = "十大常见算法";
 			sourceTree = "<group>";
@@ -129,6 +132,7 @@
 				5D2DA71927147B080090FA27 /* BinarySearch.swift in Sources */,
 				5D2DA71B271487230090FA27 /* Hanoitower.swift in Sources */,
 				5D2DA71227147AEB0090FA27 /* main.swift in Sources */,
+				5D7E05EF27259B6C00673C38 /* GreedyAlgorithm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
